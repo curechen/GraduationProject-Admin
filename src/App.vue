@@ -61,9 +61,9 @@ html, body {
 }
 
 .router-view{
+    position: absolute;
     width: 100%;
     height: auto;
-    position: absolute;
     top: 0;
     bottom: 0;
     margin: 0 auto;

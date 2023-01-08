@@ -1,3 +1,11 @@
+/*
+ * @Author: curechen 981470148@qq.com
+ * @Date: 2023-01-08 10:21:11
+ * @LastEditors: curechen 981470148@qq.com
+ * @LastEditTime: 2023-01-08 14:31:13
+ * @FilePath: \GraduationProject\local-life-mall\src\store\actions.js
+ * @Description: 
+ */
 /**
  * 严肃声明：
  * 开源版本请务必保留此注释头信息，若删除我方将保留所有法律责任追究！
@@ -13,7 +21,7 @@ export default {
   async updateCart(ctx) {
     const { data } = await getCart()
     ctx.commit('addCart', {
-      count: data.length || 0
+      count: data?.length || 0
     })
   }
 }

@@ -2,8 +2,8 @@
  * @Author: curechen 981470148@qq.com
  * @Date: 2023-01-07 18:05:51
  * @LastEditors: curechen 981470148@qq.com
- * @LastEditTime: 2023-01-07 20:01:15
- * @FilePath: \workplace\Vue\newbee-mall-vue3-app\src\utils\axios.js
+ * @LastEditTime: 2023-01-08 15:50:55
+ * @FilePath: \GraduationProject\local-life-mall\src\utils\axios.js
  * @Description: 
  */
 /**
@@ -20,7 +20,7 @@ import { setLocal } from '@/common/js/utils'
 import router from '../router'
 // //backend-api-01.newbee.ltd/api/v1
 // //backend-api-01.newbee.ltd/api/v1
-axios.defaults.baseURL = process.env.NODE_ENV == 'development' ? '//42.193.99.39:8091/api/v1' : '//42.193.99.39:8091/api/v1'
+axios.defaults.baseURL = process.env.NODE_ENV == 'development' ? '//backend-api-01.newbee.ltd/api/v1' : '//42.193.99.39:8091/api/v1'
 axios.defaults.withCredentials = true
 axios.defaults.headers['X-Requested-With'] = 'XMLHttpRequest'
 axios.defaults.headers['token'] = localStorage.getItem('token') || ''
