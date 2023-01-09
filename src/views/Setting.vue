@@ -16,8 +16,8 @@
       <van-field v-model="introduceSign" label="个性签名" />
       <van-field v-model="password" type='password' label="修改密码" />
     </div>
-    <van-button round class="save-btn" color="#1baeae" type="primary" @click="save" block>保存</van-button>
-    <van-button round class="save-btn" color="#1baeae" type="primary" @click="handleLogout" block>退出登录</van-button>
+    <van-button round class="save-btn" color="#cd1625" type="primary" @click="save" block>保存</van-button>
+    <van-button round class="save-btn" color="#cd1625" type="primary" @click="handleLogout" block>退出登录</van-button>
   </div>
 </template>
 

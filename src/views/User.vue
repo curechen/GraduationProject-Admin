@@ -14,7 +14,8 @@
     <van-skeleton title :avatar="true" :row="3" :loading="loading">
       <div class="user-info">
         <div class="info">
-          <img src="https://s.yezgea02.com/1604040746310/aaaddd.png"/>
+          <!-- <img src="https://s.yezgea02.com/1604040746310/aaaddd.png"/> -->
+          <img src="@/assets/user.png"/>
           <div class="user-desc">
             <span>昵称：{{ user.nickName }}</span>
             <span>登录名：{{ user.loginName }}</span>
@@ -110,8 +111,9 @@ export default {
       width: 94%;
       margin: 10px;
       height: 115px;
-      background: linear-gradient(90deg, @primary, #51c7c7);
-      box-shadow: 0 2px 5px #269090;
+      background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+      // background-image: linear-gradient(60deg, #64b3f4 0%, #c2e59c 100%);
+      box-shadow: 0 2px 5px #cfd9df;
       border-radius: 6px;
       .info {
         position: relative;
@@ -128,12 +130,11 @@ export default {
         .user-desc {
           display: flex;
           flex-direction: column;
-          margin-left: 10px;
+          margin-left: 20px;
           line-height: 20px;
           font-size: 14px;
-          color: #fff;
           span {
-            color: #fff;
+            color: black;
             font-size: 14px;
             padding: 2px 0;
           }

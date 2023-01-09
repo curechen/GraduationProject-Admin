@@ -40,7 +40,7 @@
         <span>商品金额</span>
         <span>¥{{ total }}</span>
       </div>
-      <van-button @click="handleCreateOrder" class="pay-btn" color="#1baeae" type="primary" block>生成订单</van-button>
+      <van-button @click="handleCreateOrder" class="pay-btn" color="#cd1625" type="primary" block>生成订单</van-button>
     </div>
     <van-popup
       closeable

@@ -13,7 +13,7 @@
     <s-header :name="'商品详情'"></s-header>
     <div class="detail-content">
       <div class="detail-swipe-wrap">
-        <van-swipe class="my-swipe" indicator-color="#1baeae">
+        <van-swipe class="my-swipe" indicator-color="#cd1625">
           <van-swipe-item
             v-for="(item, index) in detail.goodsCarouselList"
             :key="index"
