@@ -23,14 +23,14 @@ const router = createRouter({
         index: 1
       }
     },
-    {
-      path: '/about',
-      name: 'about',
-      component: () => import(/* webpackChunkName: "about" */ '@/views/About.vue'),
-      meta: {
-        index: 2
-      }
-    },
+    // {
+    //   path: '/about',
+    //   name: 'about',
+    //   component: () => import(/* webpackChunkName: "about" */ '@/views/About.vue'),
+    //   meta: {
+    //     index: 2
+    //   }
+    // },
     {
       path: '/category',
       name: 'category',

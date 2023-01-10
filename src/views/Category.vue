@@ -25,8 +25,11 @@
         </div>
         <i class="iconfont icon-More"></i>
       </header>
+
       <nav-bar></nav-bar>
+
       <div class="search-wrap" ref="searchWrap">
+        <!-- 侧边栏 -->
         <list-scroll :scroll-data="categoryData" class="nav-side-wrapper">
           <ul class="nav-side">
             <li
@@ -38,6 +41,7 @@
             ></li>
           </ul>
         </list-scroll>
+
         <div class="search-content">
           <list-scroll :scroll-data="categoryData">
             <div class="swiper-container">
