@@ -58,7 +58,7 @@
       <van-checkbox @click="allCheck" v-model:checked="checkAll">全选</van-checkbox>
     </van-submit-bar>
     <div class="empty" v-if="!list.length">
-      <img class="empty-cart" src="https://s.yezgea02.com/1604028375097/empty-car.png" alt="空购物车">
+      <img class="empty-cart" src="@/assets/cart-default.png" alt="空购物车">
       <div class="title">购物车空空如也</div>
       <van-button round color="#cd1625" type="primary" @click="goTo" block>前往选购</van-button>
     </div>
@@ -262,7 +262,7 @@ export default {
       text-align: center;
       margin-top: 200px;
       .empty-cart {
-        width: 150px;
+        width: 200px;
         margin-bottom: 20px;
       }
       .van-icon-smile-o {

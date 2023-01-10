@@ -14,12 +14,13 @@
       <header class="category-header wrap van-hairline--bottom">
         <i class="nbicon nbfanhui" @click="goHome"></i>
         <div class="header-search">
-          <i class="nbicon nbSearch"></i>
+          <!-- <i class="nbicon nbSearch"></i> -->
+          <van-icon name="search" class="search-icon" />
           <router-link
             tag="span"
             class="search-title"
             to="./product-list?from=category"
-            >全场50元起步</router-link
+            >点击搜索</router-link
           >
         </div>
         <i class="iconfont icon-More"></i>
@@ -162,6 +163,7 @@ export default {
     }
     .header-search {
       display: flex;
+      align-items: center;
       width: 80%;
       height: 20px;
       line-height: 20px;
@@ -170,11 +172,13 @@ export default {
       color: #232326;
       background: #f7f7f7;
       border-radius: 20px;
-      .nbSearch {
+      .search-icon {
         padding: 0 10px 0 20px;
         font-size: 17px;
       }
       .search-title {
+        flex: 1;
+        padding-left: 65px;
         font-size: 12px;
         color: #666;
         line-height: 21px;

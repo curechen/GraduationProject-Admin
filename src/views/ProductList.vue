@@ -16,7 +16,12 @@
         <div class="header-search">
           <!-- <i class="nbicon nbSearch"></i> -->
           <van-icon name="search" class="search-icon" />
-          <input type="text" class="search-title" v-model="keyword" @keyup.enter="getSearch" />
+          <input
+            type="text"
+            class="search-title"
+            v-model="keyword"
+            @keyup.enter="getSearch"
+          />
         </div>
         <span class="search-btn" @click="getSearch">搜索</span>
       </header>
@@ -293,5 +298,9 @@ export default {
     margin: 0 auto 20px;
     padding-top: 250px;
   }
+}
+
+.van-pull-refresh {
+  overflow: scroll !important; // 修改组件原生样式，使得组件可以滚动
 }
 </style>
