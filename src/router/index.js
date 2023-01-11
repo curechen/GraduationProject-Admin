@@ -1,3 +1,11 @@
+/*
+ * @Author: curechen 981470148@qq.com
+ * @Date: 2023-01-08 10:24:39
+ * @LastEditors: curechen 981470148@qq.com
+ * @LastEditTime: 2023-01-11 11:19:11
+ * @FilePath: \GraduationProject\admin\src\router\index.js
+ * @Description: 路由
+ */
 import { createRouter, createWebHashHistory } from 'vue-router'
 
 const router = createRouter({
@@ -5,7 +13,7 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      redirect: '/introduce'
+      redirect: '/dashboard'
     },
     {
       path: '/introduce',

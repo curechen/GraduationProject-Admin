@@ -4,8 +4,8 @@
       <el-aside class="aside">
         <div class="head">
           <div>
-            <img src="//s.weituibao.com/1582958061265/mlogo.png" alt="logo">
-            <span>vue3 admin</span>
+            <!-- <img src="//s.weituibao.com/1582958061265/mlogo.png" alt="logo"> -->
+            <span>后台管理系统</span>
           </div>
         </div>
         <div class="line" />
@@ -21,7 +21,7 @@
               <span>Dashboard</span>
             </template>
             <el-menu-item-group>
-              <el-menu-item index="/"><el-icon><Odometer /></el-icon>首页</el-menu-item>
+              <el-menu-item index="/dashboard"><el-icon><Odometer /></el-icon>首页</el-menu-item>
               <el-menu-item index="/add"><el-icon><Plus /></el-icon>添加商品</el-menu-item>
             </el-menu-item-group>
           </el-sub-menu>
@@ -62,7 +62,7 @@
         <div class="main">
           <router-view />
         </div>
-        <Footer />
+        <!-- <Footer /> -->
       </el-container>
     </el-container>
     <el-container v-else class="container">
@@ -75,7 +75,7 @@
 import { reactive } from 'vue'
 import { useRouter } from 'vue-router'
 import Header from '@/components/Header.vue'
-import Footer from '@/components/Footer.vue'
+// import Footer from '@/components/Footer.vue'
 import { localGet, pathMap } from '@/utils'
 
 const noMenu = ['/login']
@@ -83,7 +83,7 @@ const router = useRouter()
 const state = reactive({
   showMenu: true,
   defaultOpen: ['1', '2', '3', '4'],
-  currentPath: '/',
+  currentPath: '/dashboard',
 })
 
 router.beforeEach((to, from, next) => {
