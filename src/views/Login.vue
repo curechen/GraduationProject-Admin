@@ -2,13 +2,13 @@
   <div class="login-body">
     <div class="login-container">
       <div class="head">
-        <img
+        <!-- <img
           class="logo"
           src="https://s.yezgea02.com/1582958061265/mlogo.png"
-        />
+        /> -->
         <div class="name">
-          <div class="title">新蜂商城</div>
-          <div class="tips">Vue3.0 后台管理系统</div>
+          <div class="title">登录</div>
+          <!-- <div class="tips">后台管理系统</div> -->
         </div>
       </div>
       <el-form
