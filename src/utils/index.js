@@ -1,3 +1,11 @@
+/*
+ * @Author: curechen 981470148@qq.com
+ * @Date: 2023-01-08 10:24:39
+ * @LastEditors: curechen 981470148@qq.com
+ * @LastEditTime: 2023-01-14 21:22:23
+ * @FilePath: \GraduationProject\admin\src\utils\index.js
+ * @Description: 
+ */
 export function localGet (key) {
   const value = window.localStorage.getItem(key)
   try {
@@ -22,9 +30,11 @@ export function hasEmoji (str = '') {
 }
 
 // 单张图片上传
-export const uploadImgServer = 'http://backend-api-02.newbee.ltd/manage-api/v1/upload/file'
+// http://backend-api-02.newbee.ltd/manage-api/v1/upload/file
+export const uploadImgServer = 'http://42.193.99.39:8092/manage-api/v1/upload/file'
 // 多张图片上传
-export const uploadImgsServer = 'http://backend-api-02.newbee.ltd/manage-api/v1/upload/files'
+// http://backend-api-02.newbee.ltd/manage-api/v1/upload/files
+export const uploadImgsServer = 'http://42.193.99.39:8092/manage-api/v1/upload/files'
 
 export const pathMap = {
   login: '登录',
