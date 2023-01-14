@@ -1,3 +1,11 @@
+/*
+ * @Author: curechen 981470148@qq.com
+ * @Date: 2023-01-08 10:24:39
+ * @LastEditors: curechen 981470148@qq.com
+ * @LastEditTime: 2023-01-14 16:40:17
+ * @FilePath: \GraduationProject\admin\src\utils\axios.js
+ * @Description: axios 封装
+ */
 import axios from 'axios'
 import { ElMessage } from 'element-plus'
 import router from '@/router/index'
@@ -24,6 +32,9 @@ axios.interceptors.response.use(res => {
   if (res.data.resultCode != 200) {
     if (res.data.message) ElMessage.error(res.data.message)
     if (res.data.resultCode == 419) {
+      router.push({ path: '/login' })
+    }
+    if (res.data.resultCode == 500 && res.data.message === '未登录或非法访问') {
       router.push({ path: '/login' })
     }
     return Promise.reject(res.data)
