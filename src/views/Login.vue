@@ -98,7 +98,7 @@ const resetForm = () => {
   width: 420px;
   height: 500px;
   background-color: #fff;
-  border-radius: 4px;
+  border-radius: 6px;
   box-shadow: 0px 21px 41px 0px rgba(0, 0, 0, 0.2);
 }
 .head {
@@ -128,9 +128,5 @@ const resetForm = () => {
 /* .login-form >>> .el-form--label-top .el-form-item__label */
 .login-form :deep(.el-form--label-top .el-form-item__label) {
   padding: 0;
-}
-/* .login-form >>> .el-form-item */
-.login-form :deep(.el-form-item) {
-  margin-bottom: 0;
 }
 </style>
