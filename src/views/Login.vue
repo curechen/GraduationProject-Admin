@@ -30,6 +30,7 @@
             type="password"
             v-model.trim="state.ruleForm.password"
             autocomplete="off"
+            @keyup.enter.native="submitForm"
           ></el-input>
         </el-form-item>
         <el-form-item>
