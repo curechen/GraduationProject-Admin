@@ -92,17 +92,17 @@ const close = () => {
 const submitForm = () => {
   formRef.value.validate((valid) => {
     if (valid) {
-      if (state.ruleForm.id < 0 || state.ruleForm.id > 200) {
-        ElMessage.error('商品编号不能小于 0 或大于 200')
-        return
-      }
+      // if (Number(state.ruleForm.id) < 0 || Number(state.ruleForm.id) > 200) {
+      //   ElMessage.error('商品编号不能小于 0 或大于 200')
+      //   return
+      // }
       if (props.type == 'add') {
         axios.post('/indexConfigs', {
           configType: props.configType || 3,
           configName: state.ruleForm.name,
           redirectUrl: state.ruleForm.link,
-          goodsId: state.ruleForm.id,
-          configRank: state.ruleForm.sort
+          goodsId: Number(state.ruleForm.id),
+          configRank: Number(state.ruleForm.sort)
         }).then(() => {
           ElMessage.success('添加成功')
           state.visible = false
@@ -114,8 +114,8 @@ const submitForm = () => {
           configType: props.configType || 3,
           configName: state.ruleForm.name,
           redirectUrl: state.ruleForm.link,
-          goodsId: state.ruleForm.id,
-          configRank: state.ruleForm.sort
+          goodsId: Number(state.ruleForm.id),
+          configRank: Number(state.ruleForm.sort)
         }).then(() => {
           ElMessage.success('修改成功')
           state.visible = false
