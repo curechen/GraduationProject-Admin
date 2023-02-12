@@ -2,7 +2,7 @@
  * @Author: curechen 981470148@qq.com
  * @Date: 2023-01-08 10:24:39
  * @LastEditors: curechen 981470148@qq.com
- * @LastEditTime: 2023-01-14 21:22:23
+ * @LastEditTime: 2023-02-12 17:32:49
  * @FilePath: \GraduationProject\admin\src\utils\index.js
  * @Description: 
  */
@@ -34,7 +34,9 @@ export function hasEmoji (str = '') {
 export const uploadImgServer = 'http://42.193.99.39:8092/manage-api/v1/upload/file'
 // 多张图片上传
 // http://backend-api-02.newbee.ltd/manage-api/v1/upload/files
-export const uploadImgsServer = 'http://42.193.99.39:8092/manage-api/v1/upload/files'
+// export const uploadImgsServer = 'http://42.193.99.39:8092/manage-api/v1/upload/files'
+// 因为多张图片上传接口没有做，所以在这里直接改成使用单张图片上传接口
+export const uploadImgsServer = 'http://42.193.99.39:8092/manage-api/v1/upload/file'
 
 export const pathMap = {
   login: '登录',
